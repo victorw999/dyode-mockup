@@ -1,5 +1,5 @@
 Demo [http://dyode.findvictor.com/]
-# Dynode Mockup Implementation Note:
+# Dyode Mockup Implementation Note:
 * JS Framework: react
 * UI: Materializecss library
 * I understand on your spec you discourage using bootstrap to test candidates’s general proficiency with mobile-first implementations. Hopefully materializecss library is ok in this case.
