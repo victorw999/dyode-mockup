@@ -4,14 +4,16 @@ Demo [http://dyode.findvictor.com/]
 * UI: Materializecss library
 * I understand on your spec you discourage using bootstrap to test candidates’s general proficiency with mobile-first implementations. Hopefully materializecss library is ok in this case.
 
-Besides bootstrap, I also have experience with other grid layout tools such as:
-- susy 
-- slate
-- React’s material-ui (currently learning jss)
+* Besides bootstrap, I also have experience with other grid layout tools such as:
+  - susy 
+  - slate
+  - React’s material-ui (currently learning jss)
 
-Scss location:
+## Scss location:
 * src\scss\base.scss
 
+## Web host:
+* Bluehost (I also have worked with AWS, firebase)
 
 Happy coding!
 
