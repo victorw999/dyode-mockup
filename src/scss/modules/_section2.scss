@@ -1,0 +1,33 @@
+.section2 {
+  .card {
+    box-shadow: none;
+    .card-image {
+      img {
+        object-fit: cover;
+        height: 40vh;
+        @media only screen and (min-width: 601px) {
+          object-fit: contain;
+          height: auto;
+        }
+      } //img
+    } //  .card-image
+    .card-content {
+      background-color: $themecolor;
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      .heading1 {
+        color: white;
+        margin: 0;
+        font-family: "Pacifico", cursive;
+        font-size: 25px;
+        @media only screen and (min-width: 601px) {
+          font-size: 35px;
+        }
+        @media only screen and (min-width: 993px) {
+          font-size: 50px;
+        }
+      } //.heading1
+    } //.card-content
+  } //.card
+} //.section2

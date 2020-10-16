@@ -1,0 +1,85 @@
+.navtabs_wrapper {
+  // @media only screen and (min-width: 993px) {
+  //   // width: 50% !important;
+  // }
+  // @media only screen and (max-width: 992px) {
+  //   width: 70% !important;
+  // }
+  // @media only screen and (max-width: 768px) {
+  //   left: 0 !important;
+  //   transform: unset !important;
+  // }
+
+  margin: auto;
+} //.navtabs_wrapper
+
+.navtabs {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (min-width: 601px) {
+    width: 800px;
+  }
+
+  .sitelogo {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 45px;
+      @media only screen and (min-width: 601px) {
+        height: 76px;
+      }
+    }
+  }
+
+  // remove tab's background
+  background-color: transparent !important;
+
+  .menu {
+    display: none;
+
+    @media only screen and (min-width: 601px) {
+      display: inline-block;
+      a {
+        // tab text
+        font-family: "Lato";
+        color: white;
+        font-weight: 300;
+        font-size: 26px;
+        &:hover {
+          color: color("teal", "lighten-2");
+        }
+        &.active {
+          background-color: color("teal", "lighten-1");
+          color: white !important;
+        }
+      } // .tab a
+    }
+
+    .indicator {
+      background-color: color("teal", "base") !important;
+    }
+  } // .menu
+
+  @media only screen and (max-width: 992px) {
+    // override tab gaps
+    .tab {
+      flex-grow: unset !important;
+    }
+  }
+} //.navtabs
+
+// sync the height of tabs w/ nav
+.tabs.navtabs,
+.tabs.navtabs .tab,
+.navtab_home li {
+  height: 56px !important;
+  line-height: 56px !important;
+  text-transform: unset;
+
+  @media only screen and (min-width: 601px) {
+    height: 94px !important;
+    line-height: 94px !important;
+  }
+}

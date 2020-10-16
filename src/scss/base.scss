@@ -1,0 +1,24 @@
+// default font
+$roboto-font-path: "materialize/fonts/roboto/";
+$themecolor: #10504f;
+
+// added fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// mixin
+@import "~materialize-css/sass/materialize";
+
+// components
+@import "modules/body";
+@import "modules/NavTabs";
+@import "modules/Navbar";
+@import "modules/NavDropDown";
+@import "modules/NotificationBar";
+@import "modules/section1";
+@import "modules/section2";
+@import "modules/section3";
+@import "modules/section4";
+@import "modules/section5";
+@import "modules/section6";
+@import "modules/footer";

@@ -1,0 +1,125 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  @media only screen and (min-width: 601px) {
+    padding: 2rem;
+  }
+  @media only screen and (min-width: 993px) {
+    padding: 4rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 601px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      @media only screen and (min-width: 601px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    } //.footer-left
+
+    ///// BEGIN: collapible css
+    .quick-collapsible-header {
+      display: none;
+    }
+
+    label {
+      font-family: "Pacifico", cursive;
+      font-size: 16px;
+      color: #fff;
+
+      text-align: left;
+      display: block;
+      padding: 8px 22px;
+      cursor: pointer;
+
+      transition: ease 0.5s;
+      position: relative; /* ADDING THIS IS REQUIRED */
+      // background: grey;
+
+      width: 100%;
+      @media only screen and (min-width: 601px) {
+        width: 12rem;
+      }
+      &::after {
+        content: "+";
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        // disable collapse sign when not mobile
+        @media only screen and (min-width: 601px) {
+          content: "";
+        }
+      }
+    }
+
+    input:checked + label::after {
+      content: "-";
+      right: 14px;
+      top: 3px;
+      // disable collapse sign when not mobile
+      @media only screen and (min-width: 601px) {
+        content: "";
+      }
+    }
+
+    .quick-collapsible-content {
+      text-align: left;
+      padding: 10px 25px;
+      margin: 0 0 1px 0;
+      border-radius: 3px;
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+    }
+
+    input + label + .quick-collapsible-content {
+      display: none;
+    }
+
+    input:checked + label + .quick-collapsible-content {
+      display: block;
+    }
+
+    @media only screen and (min-width: 601px) {
+      input + label + .quick-collapsible-content,
+      input:checked + label + .quick-collapsible-content {
+        display: block;
+      }
+    }
+    ///// END: collapible css
+
+    .footer-right {
+      // display: flex;
+      // flex-direction: column;
+      @media only screen and (min-width: 601px) {
+        // flex-direction: row;
+        // justify-content: space-between;
+      }
+
+      .title {
+        font-family: "Pacifico", cursive;
+        font-size: 16px;
+        color: white;
+      }
+      .social-icons {
+        i {
+          margin: 1rem;
+        }
+      }
+    } //.footer-left
+  } //.container
+} //footer
